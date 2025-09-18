@@ -1,0 +1,223 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Quetta Munchies — Navbar</title>
+
+  <!-- Google font (optional) -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="./style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+</head>
+
+<body>
+  <<!-- NAVBAR -->
+    <nav class="navbar" role="navigation" aria-label="Main navigation">
+      <div class="nav-container">
+
+        <!-- logo -->
+        <a href="#" class="brand" aria-label="Quetta Munchies home">
+          <img src="./images/img-logo1.png" alt="Quetta Munchies logo" class="logo">
+        </a>
+
+        <!-- Theme Switcher (added beside logo) -->
+        <div class="theme-switcher">
+          <button id="lightBtn" aria-label="Switch to light theme">🌞Light</button>
+          <button id="darkBtn" aria-label="Switch to dark theme">🌙Dark</button>
+        </div>
+
+        <!-- hamburger for small screens -->
+        <button class="nav-toggle" aria-controls="primary-nav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="hamburger" aria-hidden="true"></span>
+        </button>
+
+        <ul id="primary-nav" class="nav-links">
+          <li><a class="nav-link active" href="#home">Home</a></li>
+          <li><a class="nav-link" href="#menu">Menu</a></li>
+          <li><a class="nav-link" href="#specials">Specials</a></li>
+          <li><a class="nav-link" href="#faq">FAQ</a></li>
+          <li><a class="nav-link" href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+
+
+
+    <!-- small spacer content so you can test scrolling (remove if you don't want it) -->
+    <section id="home" class="hero">
+      <div class="hero-left">
+        <h1>Discover Our Menu</h1>
+        <button class="btn">View Menu</button>
+      </div>
+      <div class="hero-right">
+        <h1>Book a Table</h1>
+        <button class="btn">Reserve Now</button>
+      </div>
+    </section>
+
+    <!-- ===== Menu Section ===== -->
+    <section id="menu" class="menu-section">
+      <h2 class="section-title">Our Menu</h2>
+      <div class="menu-grid">
+        <div class="menu-item">
+          <img src="./images/img-1.jpg" alt="Grilled Salmon">
+          <div class="overlay">
+            <h3>Grilled Salmon</h3>
+            <p>Perfectly seasoned salmon grilled to golden perfection.</p>
+          </div>
+        </div>
+        <div class="menu-item">
+          <img src="./images/img-2.jpg" alt="Fresh Pasta">
+          <div class="overlay">
+            <h3>Fresh Pasta</h3>
+            <p>Handmade pasta served with a light tomato sauce.</p>
+          </div>
+        </div>
+        <div class="menu-item">
+          <img src="./images/img-3.jpg" alt="Pepperoni Pizza">
+          <div class="overlay">
+            <h3>Pepperoni Pizza</h3>
+            <p>Classic pizza topped with crispy pepperoni slices.</p>
+          </div>
+        </div>
+        <div class="menu-item">
+          <img src="./images/img-4.jpg" alt="Bacon Sandwich">
+          <div class="overlay">
+            <h3>Bacon Sandwich</h3>
+            <p>A hearty sandwich with crispy bacon and fresh bread.</p>
+          </div>
+        </div>
+        <div class="menu-item">
+          <img src="./images/img-5.jpg" alt="Veggie Sandwich">
+          <div class="overlay">
+            <h3>Special Veggie Sandwich</h3>
+            <p>A fresh mix of vegetables in warm toasted bread.</p>
+          </div>
+        </div>
+        <div class="menu-item">
+          <img src="./images/img-6.jpg" alt="Zinger Burger">
+          <div class="overlay">
+            <h3>Special Mayo Zinger Burger</h3>
+            <p>Juicy fried chicken with mayo and crisp lettuce.</p>
+          </div>
+        </div>
+        <div class="menu-item">
+          <img src="./images/img-1.jpg" alt="Grilled Salmon">
+          <div class="overlay">
+            <h3>Grilled Salmon</h3>
+            <p>Another serving of our delicious grilled salmon.</p>
+          </div>
+        </div>
+        <div class="menu-item">
+          <img src="./images/img-2.jpg" alt="Fresh Pasta">
+          <div class="overlay">
+            <h3>Fresh Pasta</h3>
+            <p>Classic Italian pasta with herbs and olive oil.</p>
+          </div>
+        </div>
+        <div class="menu-item">
+          <img src="./images/img-3.jpg" alt="Pepperoni Pizza">
+          <div class="overlay">
+            <h3>Pepperoni Pizza</h3>
+            <p>Cheesy pizza with spicy pepperoni topping.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- Speical Dihs Flash Card -->
+    <section id="specials" class="specials">
+      <h2 class="special-dish">Dish of the Day</h2>
+      <div class="special-card">
+        <div class="card-front">
+          <h3>Today's Special</h3>
+          <button id="toggleSpecial">Show Special</button>
+        </div>
+        <div class="card-back">
+          <img src="./images/img-1.jpg" alt="Grilled Salmon">
+          <h3>Grilled Salmon</h3>
+          <p>A perfectly seasoned salmon fillet, grilled to perfection and served with lemon butter sauce.</p>
+          <button id="hideSpecial">Hide Special</button>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- Faq Section -->
+    <section class="faq" id="faq">
+      <h2>Frequently Asked Questions</h2>
+
+      <div class="faq-item">
+        <input type="checkbox" id="q1">
+        <label for="q1" class="faq-question">What are your delivery times?</label>
+        <div class="faq-answer">
+          <p>We deliver every day from 11 AM to 11 PM. Delivery usually takes 30–45 minutes depending on your location.
+          </p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <input type="checkbox" id="q2">
+        <label for="q2" class="faq-question">Do you have vegan or vegetarian options?</label>
+        <div class="faq-answer">
+          <p>Yes! We offer a wide range of vegan and vegetarian dishes, clearly marked on our menu.</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <input type="checkbox" id="q3">
+        <label for="q3" class="faq-question">Can I reserve a table online?</label>
+        <div class="faq-answer">
+          <p>Absolutely! Use the "Reserve Now" button on our website and you’ll instantly book your table.</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <input type="checkbox" id="q4">
+        <label for="q4" class="faq-question">Do you offer home catering?</label>
+        <div class="faq-answer">
+          <p>Yes, we offer catering services for events and private gatherings. Contact us for details.</p>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ===== Contact Section ===== -->
+    <section class="contact" id="contact">
+      <h2>Reserve a Table</h2>
+      <form id="reservationForm" novalidate>
+        <div class="form-group">
+          <input type="email" id="email" placeholder="Enter your email" required />
+          <span class="error-message" id="emailError">Please enter a valid email.</span>
+        </div>
+        <button type="submit">Reserve Now</button>
+      </form>
+    </section>
+
+    <!-- ===== Footer Section ===== -->
+<footer class="footer">
+  <div class="footer-container">
+    <p>© 2025 YourRestaurant. All rights reserved.</p>
+    <div class="social-links">
+      <a href="https://www.instagram.com" target="_blank" aria-label="Instagram">
+        <i class="fab fa-instagram"></i>
+      </a>
+      <a href="https://www.facebook.com" target="_blank" aria-label="Facebook">
+        <i class="fab fa-facebook"></i>
+      </a>
+      <a href="https://www.linkedin.com" target="_blank" aria-label="LinkedIn">
+        <i class="fab fa-linkedin"></i>
+      </a>
+    </div>
+  </div>
+</footer>
+
+    <script src="./script.js"></script>
+</body>
+
+</html>
